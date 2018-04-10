@@ -1,0 +1,15 @@
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\FileViewer.exe.config
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\FileViewer.exe
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\FileViewer.pdb
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.csprojResolveAssemblyReference.cache
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.FormMain.resources
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.Properties.Resources.resources
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.GenerateResource.Cache
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.exe
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\obj\Debug\FileViewer.pdb
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\Wve.dll
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\Wve.pdb
+c:\users\weast\onedrive\documents\visual studio 2015\Projects\FileViewer\FileViewer\bin\Debug\Wve.xml
+C:\Users\weast\OneDrive\Documents\GitHub\FileViewer\FileViewer\bin\Debug\FileViewer.exe.config
+C:\Users\weast\OneDrive\Documents\GitHub\FileViewer\FileViewer\obj\Debug\FileViewer.exe
+C:\Users\weast\OneDrive\Documents\GitHub\FileViewer\FileViewer\obj\Debug\FileViewer.pdb
