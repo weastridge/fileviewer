@@ -40,3 +40,6 @@ C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\File
 C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.CoreCompileInputs.cache
 C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.exe
 C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.pdb
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.exe.config
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.exe
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.pdb
