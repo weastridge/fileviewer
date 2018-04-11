@@ -48,7 +48,7 @@
             this.textBoxServer.Name = "textBoxServer";
             this.textBoxServer.Size = new System.Drawing.Size(165, 20);
             this.textBoxServer.TabIndex = 0;
-            this.textBoxServer.Text = "localhost,2009";
+            this.textBoxServer.Text = "10.139.5.20";
             // 
             // textBoxDatabase
             // 
@@ -56,7 +56,7 @@
             this.textBoxDatabase.Name = "textBoxDatabase";
             this.textBoxDatabase.Size = new System.Drawing.Size(165, 20);
             this.textBoxDatabase.TabIndex = 1;
-            this.textBoxDatabase.Text = "MM3";
+            this.textBoxDatabase.Text = "PrimeRecordBin989";
             // 
             // textBoxLogin
             // 
@@ -64,7 +64,7 @@
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(165, 20);
             this.textBoxLogin.TabIndex = 2;
-            this.textBoxLogin.Text = "MM3Login";
+            this.textBoxLogin.Text = "eastridgemd";
             // 
             // textBoxPassword
             // 
@@ -80,7 +80,7 @@
             this.textBoxSqlQuery.Name = "textBoxSqlQuery";
             this.textBoxSqlQuery.Size = new System.Drawing.Size(357, 66);
             this.textBoxSqlQuery.TabIndex = 4;
-            this.textBoxSqlQuery.Text = "SELECT Login FROM USERS";
+            this.textBoxSqlQuery.Text = "SELECT DocImage from ClinicalBin where DocumentID = 3143877";
             // 
             // label1
             // 
