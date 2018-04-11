@@ -20,8 +20,9 @@ C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewe
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.pdb
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.dll
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.pdb
-C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.xml
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csprojResolveAssemblyReference.cache
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.FormMain.resources
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.Properties.Resources.resources
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.GenerateResource.Cache
+C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.ReadDatabaseForm.resources
+C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.xml

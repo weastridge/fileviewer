@@ -83,8 +83,16 @@ namespace FileViewer
                     if (openFileDialog1.ShowDialog() == DialogResult.OK)
                     {
                         MainClass.filePathAndName = openFileDialog1.FileName;
+                        using (FileStream fs = new FileStream(MainClass.filePathAndName, FileMode.Open))
+                        {
+                            MainClass.DataBytes = new byte[fs.Length];
+                            fs.Read(MainClass.DataBytes, 0, MainClass.DataBytes.Length);
+                        }
                         this.Text = "View File: " + MainClass.filePathAndName;
-                        statusStrip1.Items[0].Text = MainClass.filePathAndName;
+                        statusStrip1.Items[0].Text = "Read " + 
+                            MainClass.DataBytes.Length.ToString() +
+                            " bytes from: " + 
+                            MainClass.filePathAndName;
                         resetTabPages();
                     }
                 }
@@ -131,50 +139,52 @@ namespace FileViewer
             {
                 try
                 {
-                    if(string.IsNullOrEmpty(MainClass.filePathAndName))
+                    if (checkBoxLoadToMemory.Checked) //if data is loaded in memory
                     {
-                        MessageBox.Show("Please choose file to load.");
-                    }
-                    else if (File.Exists(MainClass.filePathAndName))
-                    {
-                        StringBuilder sb = new StringBuilder();
-                        using (FileStream fs = new FileStream(MainClass.filePathAndName, FileMode.Open))
+                        if (MainClass.DataBytes == null)
                         {
+                            MessageBox.Show("Please choose file to load.");
+                        }
+                        else
+                        {
+
                             if (tabControl1.SelectedTab == tabPageHex)
                             {
                                 textBoxHex.Clear();
-                                byte[] bytes = new byte[fs.Length];
-                                fs.Read(bytes, 0, bytes.Length);
-                                string s = Wve.WveTools.BytesToHex(bytes, " ");
+                                string s = Wve.WveTools.BytesToHex(MainClass.DataBytes, " ");
                                 textBoxHex.Text = s;
                             }//from if hex page
-                            else if(tabControl1.SelectedTab == tabPageText)
+                            else if (tabControl1.SelectedTab == tabPageText)
                             {
-                                Encoding enc = ((_encodingType)(comboBoxEncoding.SelectedItem)).encodingType;
-                                if(enc == null)
+                                using (MemoryStream ms = new MemoryStream(MainClass.DataBytes))
                                 {
-                                    using (StreamReader sr = new StreamReader(fs))
+                                    Encoding enc = ((_encodingType)(comboBoxEncoding.SelectedItem)).encodingType;
+                                    if (enc == null)
                                     {
-                                        textBoxText.Text = sr.ReadToEnd();
-                                    }
-                                }
-                                else
-                                {
-                                    using (StreamReader sr = new StreamReader(fs, enc))
+                                        using (StreamReader sr = new StreamReader(ms))
+                                        {
+                                            textBoxText.Text = sr.ReadToEnd();
+                                        }
+                                    }//from if enc null
+                                    else
                                     {
-                                        textBoxText.Text = sr.ReadToEnd();
+                                        using (StreamReader sr = new StreamReader(ms, enc))
+                                        {
+                                            textBoxText.Text = sr.ReadToEnd();
+                                        }
                                     }
-                                }
+                                }//from using memory stream
                             }//from if text page
-                        }//from using filestream
-                        //show details
-                        FileInfo fi = new FileInfo(MainClass.filePathAndName);
-                        statusStrip1.Items[0].Text = fi.ToString() +
-                            "   length: " + fi.Length;
-                    }//from if file exists
+
+                            //show details
+                            statusStrip1.Items[0].Text = MainClass.filePathAndName +
+                                "   length: " + MainClass.DataBytes.Length;
+                        }//from if data exists
+                    }//from if reading data from memory
                     else
                     {
-                        MessageBox.Show("file " + MainClass.filePathAndName + " not found.");
+                        //here we would read pages of data from large data file, such
+                        // as when too large to load to memory
                     }
                 }
                 catch (Exception er)
@@ -220,6 +230,29 @@ namespace FileViewer
                             }
                         }
                     }//from if tabPageXML
+                }
+                catch (Exception er)
+                {
+                    MainClass.ShowError(er);
+                }
+            }
+        }
+
+        private void toolStripMenuItemReadDatabase_Click(object sender, EventArgs e)
+        {
+            using (Wve.HourglassCursor waitCursor = new Wve.HourglassCursor())
+            {
+                try
+                {
+                    ReadDatabaseForm dlg = new ReadDatabaseForm();
+                    if (dlg.ShowDialog() == DialogResult.OK)
+                    {
+                        MainClass.filePathAndName = "DATABASE:" + dlg.textBoxServer.Text + "::" + dlg.textBoxDatabase.Text;
+                        this.Text = "View Data from " + MainClass.filePathAndName;
+                        this.statusStrip1.Items[0].Text = "Read Data from " + MainClass.filePathAndName;
+                        MainClass.DataBytes = dlg.ResultBytes;
+                        resetTabPages();
+                    }
                 }
                 catch (Exception er)
                 {

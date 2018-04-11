@@ -18,6 +18,11 @@ namespace FileViewer
         internal static string filePathAndName = string.Empty;
 
         /// <summary>
+        /// the byte array to view
+        /// </summary>
+        internal static byte[] DataBytes = null;
+
+        /// <summary>
         /// show error and save to clipboard
         /// </summary>
         /// <param name="er"></param>
