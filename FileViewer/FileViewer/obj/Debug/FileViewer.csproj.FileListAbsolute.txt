@@ -26,3 +26,17 @@ C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewe
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.GenerateResource.Cache
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.ReadDatabaseForm.resources
 C:\Users\weast\Source\Repos\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.xml
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.exe.config
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.exe
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.pdb
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.dll
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.pdb
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.xml
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csprojResolveAssemblyReference.cache
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.FormMain.resources
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.Properties.Resources.resources
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.ReadDatabaseForm.resources
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.GenerateResource.Cache
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.CoreCompileInputs.cache
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.exe
+C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.pdb

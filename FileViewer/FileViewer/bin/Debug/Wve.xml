@@ -1860,7 +1860,7 @@
             tools for working with networks
             </summary>
         </member>
-        <member name="M:Wve.WveNetwork.IsInternetAvailable">
+        <member name="M:Wve.WveNetwork.IsNetworkAvailable">
             <summary>
             This is adapted from a Code Project article called
             Detect Internet Network Availability By stevenmcohn.
