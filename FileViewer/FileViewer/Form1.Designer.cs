@@ -31,10 +31,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chooseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemReadDatabase = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.checkBoxLoadToMemory = new System.Windows.Forms.CheckBox();
             this.buttonFind = new System.Windows.Forms.Button();
             this.labelsearch = new System.Windows.Forms.Label();
             this.textBoxFind = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@
             this.textBoxText = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.toolStripMenuItemReadDatabase = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBoxLoadToMemory = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelMain.SuspendLayout();
@@ -89,11 +89,19 @@
             this.chooseToolStripMenuItem.Text = "&Open File";
             this.chooseToolStripMenuItem.Click += new System.EventHandler(this.chooseToolStripMenuItem_Click);
             // 
+            // toolStripMenuItemReadDatabase
+            // 
+            this.toolStripMenuItemReadDatabase.Name = "toolStripMenuItemReadDatabase";
+            this.toolStripMenuItemReadDatabase.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemReadDatabase.Text = "&Read database";
+            this.toolStripMenuItemReadDatabase.Click += new System.EventHandler(this.toolStripMenuItemReadDatabase_Click);
+            // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -126,6 +134,19 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(127, 542);
             this.panelLeft.TabIndex = 2;
+            // 
+            // checkBoxLoadToMemory
+            // 
+            this.checkBoxLoadToMemory.AutoSize = true;
+            this.checkBoxLoadToMemory.Checked = true;
+            this.checkBoxLoadToMemory.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxLoadToMemory.Enabled = false;
+            this.checkBoxLoadToMemory.Location = new System.Drawing.Point(12, 518);
+            this.checkBoxLoadToMemory.Name = "checkBoxLoadToMemory";
+            this.checkBoxLoadToMemory.Size = new System.Drawing.Size(97, 17);
+            this.checkBoxLoadToMemory.TabIndex = 7;
+            this.checkBoxLoadToMemory.Text = "load to memory";
+            this.checkBoxLoadToMemory.UseVisualStyleBackColor = true;
             // 
             // buttonFind
             // 
@@ -269,26 +290,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // toolStripMenuItemReadDatabase
-            // 
-            this.toolStripMenuItemReadDatabase.Name = "toolStripMenuItemReadDatabase";
-            this.toolStripMenuItemReadDatabase.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItemReadDatabase.Text = "&Read database";
-            this.toolStripMenuItemReadDatabase.Click += new System.EventHandler(this.toolStripMenuItemReadDatabase_Click);
-            // 
-            // checkBoxLoadToMemory
-            // 
-            this.checkBoxLoadToMemory.AutoSize = true;
-            this.checkBoxLoadToMemory.Checked = true;
-            this.checkBoxLoadToMemory.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxLoadToMemory.Enabled = false;
-            this.checkBoxLoadToMemory.Location = new System.Drawing.Point(12, 518);
-            this.checkBoxLoadToMemory.Name = "checkBoxLoadToMemory";
-            this.checkBoxLoadToMemory.Size = new System.Drawing.Size(97, 17);
-            this.checkBoxLoadToMemory.TabIndex = 7;
-            this.checkBoxLoadToMemory.Text = "load to memory";
-            this.checkBoxLoadToMemory.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 

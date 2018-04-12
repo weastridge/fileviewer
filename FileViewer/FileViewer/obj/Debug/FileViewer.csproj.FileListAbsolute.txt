@@ -43,3 +43,12 @@ C:\Users\Wesley\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\File
 C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.exe.config
 C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.exe
 C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.pdb
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.exe
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\FileViewer.pdb
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.pdb
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\bin\Debug\Wve.xml
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csprojResolveAssemblyReference.cache
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.FormMain.resources
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.Properties.Resources.resources
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.ReadDatabaseForm.resources
+C:\Users\weast\OneDrive\Documents\GitHub\fileviewer\FileViewer\FileViewer\obj\Debug\FileViewer.csproj.GenerateResource.Cache
