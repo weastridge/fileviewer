@@ -40,6 +40,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonLoadSettings = new System.Windows.Forms.Button();
+            this.buttonSaveSettings = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // textBoxServer
@@ -80,7 +84,11 @@
             this.textBoxSqlQuery.Name = "textBoxSqlQuery";
             this.textBoxSqlQuery.Size = new System.Drawing.Size(357, 66);
             this.textBoxSqlQuery.TabIndex = 4;
+<<<<<<< HEAD
             this.textBoxSqlQuery.Text = "SELECT DocImage from ClinicalBin where DocumentID = 3143877";
+=======
+            this.textBoxSqlQuery.Text = "SELECT Image from Images WHERE ImageID = 157 ";
+>>>>>>> 8f304ad9ad6c1a491bbfb37fb49ef5211669d512
             // 
             // label1
             // 
@@ -147,6 +155,30 @@
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
+            // buttonLoadSettings
+            // 
+            this.buttonLoadSettings.Location = new System.Drawing.Point(13, 198);
+            this.buttonLoadSettings.Name = "buttonLoadSettings";
+            this.buttonLoadSettings.Size = new System.Drawing.Size(82, 23);
+            this.buttonLoadSettings.TabIndex = 12;
+            this.buttonLoadSettings.Text = "LoadSettings";
+            this.buttonLoadSettings.UseVisualStyleBackColor = true;
+            this.buttonLoadSettings.Click += new System.EventHandler(this.buttonLoadSettings_Click);
+            // 
+            // buttonSaveSettings
+            // 
+            this.buttonSaveSettings.Location = new System.Drawing.Point(13, 227);
+            this.buttonSaveSettings.Name = "buttonSaveSettings";
+            this.buttonSaveSettings.Size = new System.Drawing.Size(82, 23);
+            this.buttonSaveSettings.TabIndex = 13;
+            this.buttonSaveSettings.Text = "SaveSettings";
+            this.buttonSaveSettings.UseVisualStyleBackColor = true;
+            this.buttonSaveSettings.Click += new System.EventHandler(this.buttonSaveSettings_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // ReadDatabaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +186,8 @@
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(533, 284);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonSaveSettings);
+            this.Controls.Add(this.buttonLoadSettings);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.label5);
@@ -187,5 +221,9 @@
         internal System.Windows.Forms.TextBox textBoxLogin;
         internal System.Windows.Forms.TextBox textBoxPassword;
         internal System.Windows.Forms.TextBox textBoxSqlQuery;
+        private System.Windows.Forms.Button buttonLoadSettings;
+        private System.Windows.Forms.Button buttonSaveSettings;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

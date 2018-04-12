@@ -260,5 +260,23 @@ namespace FileViewer
                 }
             }
         }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (Wve.HourglassCursor waitCursor = new Wve.HourglassCursor())
+            {
+                try
+                {
+                    if(saveFileDialog1.ShowDialog() == DialogResult.OK)
+                    {
+                        File.WriteAllBytes(saveFileDialog1.FileName, MainClass.DataBytes);
+                    }
+                }
+                catch (Exception er)
+                {
+                    MainClass.ShowError(er);
+                }
+            }
+        }
     }
 }
