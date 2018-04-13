@@ -229,7 +229,33 @@ namespace FileViewer
                                 textBoxText.ScrollToCaret();
                             }
                         }
-                    }//from if tabPageXML
+                    }//from if tabPageText
+                    //if hex
+                    else if (tabControl1.SelectedTab == tabPageHex)
+                    {
+                        //start with beginning if no text is selected or 
+                        // with next character if some already selected
+                        int startPoint = textBoxHex.SelectionLength == 0 ?
+                            0 : textBoxHex.SelectionStart + 1;
+                        if (textBoxHex.Text.ToUpper().IndexOf(textBoxFind.Text.ToUpper(),
+                            startPoint) > -1)
+                        {
+                            textBoxHex.Select(textBoxHex.Text.ToUpper().IndexOf(textBoxFind.Text.ToUpper(),
+                                startPoint), textBoxFind.Text.Length);
+                            textBoxHex.ScrollToCaret();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Reached end of text.");
+                            //reset to beginning in case want to search from top again
+                            if (textBoxText.Text.Length > 0)
+                            {
+                                textBoxText.Select(0, 0);
+                                textBoxText.ScrollToCaret();
+                            }
+                        }
+                    }//from if hex
+
                 }
                 catch (Exception er)
                 {

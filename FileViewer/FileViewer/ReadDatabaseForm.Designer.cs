@@ -84,7 +84,12 @@
             this.textBoxSqlQuery.Name = "textBoxSqlQuery";
             this.textBoxSqlQuery.Size = new System.Drawing.Size(357, 66);
             this.textBoxSqlQuery.TabIndex = 4;
+<<<<<<< HEAD
             this.textBoxSqlQuery.Text = "SELECT Image from Images WHERE ImageID = 157 ";
+=======
+
+            this.textBoxSqlQuery.Text = "SELECT DocImage from ClinicalBin where DocumentID = 3143877";
+>>>>>>> be824446a5faf57757a10d9a8456d50f87011215
             // 
             // label1
             // 
