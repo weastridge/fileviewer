@@ -13,12 +13,17 @@ namespace FileViewer
 {
     public partial class FormMain : Form
     {
-        
+        /// <summary>
+        /// main form for File Viewer
+        /// </summary>
         public FormMain()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// type of encoding
+        /// </summary>
         internal class _encodingType
         {
             /// <summary>
@@ -156,7 +161,17 @@ namespace FileViewer
                             }//from if hex page
                             else if (tabControl1.SelectedTab == tabPageText)
                             {
-                                using (MemoryStream ms = new MemoryStream(MainClass.DataBytes))
+                                //first, if there are any 0x0 end of file bytes in the data, we
+                                // will replace them with the @ char so reading the file not truncated
+                                byte[] dataBytesModified = (byte[])MainClass.DataBytes.Clone();
+                                for(int i = 0;i<dataBytesModified.Length; i++)
+                                {
+                                    if(dataBytesModified[i] == 0)
+                                    {
+                                        dataBytesModified[i] = 7; //bell character 
+                                    }
+                                }
+                                using (MemoryStream ms = new MemoryStream(dataBytesModified))
                                 {
                                     Encoding enc = ((_encodingType)(comboBoxEncoding.SelectedItem)).encodingType;
                                     if (enc == null)
@@ -212,10 +227,10 @@ namespace FileViewer
                         // with next character if some already selected
                         int startPoint = textBoxText.SelectionLength == 0 ?
                             0 : textBoxText.SelectionStart + 1;
-                        if (textBoxText.Text.ToUpper().IndexOf(textBoxFind.Text.ToUpper(),
+                        if (textBoxText.Text.IndexOf(textBoxFind.Text,
                             startPoint) > -1)
                         {
-                            textBoxText.Select(textBoxText.Text.ToUpper().IndexOf(textBoxFind.Text.ToUpper(),
+                            textBoxText.Select(textBoxText.Text.IndexOf(textBoxFind.Text,
                                 startPoint), textBoxFind.Text.Length);
                             textBoxText.ScrollToCaret();
                         }
